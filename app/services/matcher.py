@@ -3,9 +3,6 @@ from app.services.scorer import SimilarityScorer
 
 
 class ResumeJDMatcher:
-    """
-    Orchestrates the flow between embedding and scoring.
-    """
 
     def __init__(self):
         self.embedder = TextEmbedder()

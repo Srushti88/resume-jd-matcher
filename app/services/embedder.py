@@ -3,9 +3,6 @@ import numpy as np
 
 
 class TextEmbedder:
-    """
-    Responsible only for converting text into embeddings.
-    """
 
     def __init__(self):
         self.model = SentenceTransformer("all-MiniLM-L6-v2")

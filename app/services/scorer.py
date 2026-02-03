@@ -1,11 +1,6 @@
 import numpy as np
 
-
 class SimilarityScorer:
-    """
-    Responsible only for calculating similarity score between two embeddings.
-    """
-
     @staticmethod
     def cosine_similarity(vec1: np.ndarray, vec2: np.ndarray) -> float:
         dot_product = np.dot(vec1, vec2)

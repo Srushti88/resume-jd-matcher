@@ -13,7 +13,6 @@ parser = ResumeParser()
 matcher = ResumeJDMatcher()
 
 
-# Factory Method for LLM selection
 def get_llm(model_name: str):
     if model_name == "groq":
         return GroqLLM()
@@ -29,7 +28,7 @@ async def analyze_resume(
     jd_text: str = Form(...),
     model_name: str = Form(...)
 ):
-    # Save uploaded resume temporarily
+    
     file_path = f"temp_{resume.filename}"
     with open(file_path, "wb") as f:
         f.write(await resume.read())
