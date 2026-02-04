@@ -34,13 +34,13 @@ Sample Usage
 Architecture
 
 Streamlit UI
-     ↓  (HTTP POST)
+     → (HTTP POST)
 FastAPI (/analyze)
-     ↓
+     →
 Parser → Matcher (Embeddings + Scoring) → Prompt Builder
-     ↓
+    →
 LLM Factory (Groq / Gemini)
-     ↓
+     →
 Structured Response → UI
 
 
