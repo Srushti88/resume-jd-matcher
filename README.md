@@ -46,12 +46,22 @@ Structured Response → UI
 
 Tech Stack
 
-Backend	- FastAPI -	API layer, request handling
-UI - Streamlit - Simple MVP interface
-Embeddings - sentence-transformers (all-MiniLM-L6-v2) -  Semantic vector comparison
-Scoring	NumPy (cosine similarity) -	Match score calculation
-Parser - PyPDF - Extract text from resume PDF
-LLMs - Groq (llama-3.1-8b-instant) & Gemini (gemini-2.5-flash) - Resume analysis & suggestions
+Backend
+FastAPI — API handling
+
+Frontend
+Streamlit — MVP interface
+
+Layer
+sentence-transformers (all-MiniLM-L6-v2) — embeddings
+NumPy — cosine similarity scoring
+
+Parsing
+PyPDF — resume text extraction
+
+LLM Layer
+Groq (llama-3.1-8b-instant)
+Gemini (gemini-2.5-flash)
 
 
 
