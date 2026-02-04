@@ -50,7 +50,7 @@ Backend
 FastAPI — API handling
 
 Frontend
-Streamlit — MVP interface
+Streamlit —  interface
 
 Layer
 sentence-transformers (all-MiniLM-L6-v2) — embeddings
